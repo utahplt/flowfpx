@@ -6,7 +6,7 @@ FlowFPX
 
 FlowFPX is a toolkit for systematically debugging floating-point exceptions.
 
-Components:
+**Components:**
 
 * `FloatTracker.jl` for logging and fuzzing exceptional values in Julia code:
   <https://github.com/utahplt/FloatTracker.jl>
@@ -16,15 +16,13 @@ Components:
 * `GPU-FPX` for logging exceptions in NVIDIA GPU kernels:
   <https://github.com/LLNL/GPU-FPX>
 
-Other Resources:
+**Resources:**
 
-* JuliaCon 2023 talk recording:
-  <https://www.youtube.com/live/rMrHCM1Etng?feature=share&t=10146>
-* JuliaCon 2023 slides:
-  <https://lambdaland.org/files/JuliaCon%202023%20FlowFPX.pdf>
-* JuliaCon 2023 paper:
-  <https://github.com/utahplt/juliacon2023-paper>
-* Winter 2023 poster:
+* JuliaCon 2023:
+  - talk recording: <https://www.youtube.com/live/rMrHCM1Etng?feature=share&t=10146>
+  - slides: <https://lambdaland.org/files/JuliaCon%202023%20FlowFPX.pdf>
+  - paper: <https://github.com/utahplt/juliacon2023-paper>
+* Poster:
   <https://lambdaland.org/files/flowfpx_poster.pdf>
 
 
