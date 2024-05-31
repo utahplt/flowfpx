@@ -1,0 +1,101 @@
+<html>
+  <!-- page style ADOPTED from Stephen Chang's POPL 2017 page https://www.ccs.neu.edu/home/stchang/popl2017/index.html THANK YOU -->
+  <head>
+    <style>
+    @font-face { font-family: FiraSans; src: url(/FiraSans-Regular.otf); }
+    html { color: black; text-align: left; font-family: centaur, baskerville, garamond, "times new roman", times, serif; }
+    body { background-repeat: no-repeat; background-attachment: fixed; margin-top: 5%; }
+    ul { list-style: circle; margin-top: 10px; }
+    li { margin-top: 16px; }
+    dl,dt,ul { text-align: left; margin-right: 1cm; }
+    P { text-align: justify; font-family: FiraSans, Arial, Helvetica, sans-serif; }
+    a { color: #880308; text-decoration: none; }
+    img { border: 0px; }
+    A:hover { text-decoration: underline; }
+    A.bold { font-weight: bold; font-size: large; }
+    .box { padding: 0px 0px; }
+    #contents { width: 61%; margin: auto; }
+    </style>
+  </head>
+  <body>
+    <div id="contents">
+      <div class="box">
+
+        <span style="font-weight: bold;">FlowFPX</span>.
+        <br/>
+        Taylor Allred, Xinyi Li, Ashton Wiersdorf, Ben Greenman, Ganesh Gopalakrishnan
+        <br/>
+        <img src="./src/title.png" width=100% />
+
+        <blockquote>
+Reliable numerical computations are central to scientific computing, but the floating-point arithmetic that enables large-scale models is error-prone. Numeric exceptions are a common occurrence
+and can propagate through code, leading to flawed results. This
+paper presents FlowFPX, a toolkit for systematically debugging
+floating-point exceptions by recording their flow, coalescing exception contexts, and fuzzing in select locations. These tools help
+scientists discover when exceptions happen and track down their
+origin, smoothing the way to a reliable codebase.
+        </blockquote>
+      </div>
+      <div class="box">
+Components:
+<ul>
+  <li>
+    <tt>FloatTracker.jl</tt> for logging and fuzzing exceptional values in Julia code:
+    <br />
+    <a href="https://github.com/utahplt/FloatTracker.jl"><tt>https://github.com/utahplt/FloatTracker.jl</tt></a>
+    <ul>
+      <li>Examples: <a href="https://github.com/utahplt/FloatTrackerExamples"><tt>https://github.com/utahplt/FloatTrackerExamples</tt></a></li>
+    </ul>
+  </li>
+  <li>
+    <tt>Coalesced Stack-Trace Graphs</tt> (CSTGs) for summarizing logs:
+    <br/>
+    <a href="https://github.com/utahplt/CSTG"><tt>https://github.com/utahplt/CSTG</tt></a>
+  </li>
+  <li>
+    <tt>GPU-FPX</tt> for logging exceptions in NVIDIA GPU kernels:
+    <br />
+    <a href="https://github.com/LLNL/GPU-FPX"><tt>https://github.com/LLNL/GPU-FPX</tt></a>
+  </li>
+</ul>
+      </div>
+      <div class="box">
+Resources:
+<ul>
+  <li>JuliaCon 2023:
+    <ul>
+      <li>
+        talk recording: <a href="https://www.youtube.com/live/rMrHCM1Etng?feature=share&t=10146"><tt>https://www.youtube.com/live/rMrHCM1Etng?feature=share&t=10146</tt></a>
+      </li> <li>
+        slides: <a href="https://lambdaland.org/files/JuliaCon%202023%20FlowFPX.pdf"><tt>https://lambdaland.org/files/JuliaCon%202023%20FlowFPX.pdf</tt></a>
+      </li> <li>
+        paper: <a href="https://github.com/utahplt/juliacon2023-paper"><tt>https://github.com/utahplt/juliacon2023-paper</tt></a>
+      </li>
+    </ul>
+  </li>
+  <li> Poster:
+    <a href="https://lambdaland.org/files/flowfpx_poster.pdf"><tt>https://lambdaland.org/files/flowfpx_poster.pdf</tt></a>
+  </li>
+</ul>
+
+      </div>
+      <br/>
+      <div class="box">
+        <img src="./src/lifetime.png" width=100% />
+      </div>
+      <br/>
+      <div class="box">
+        <h3>CSTG</h3>
+        <p>Combine stack frames into a tree highlighting common paths:</p>
+        <img src="./src/cstg_static_diagram.png" width=100% />
+      </div>
+      <br/>
+      <div class="box">
+        <h3>Fuzzing</h3>
+        <p>Configure an injector, set up a recording file:</p>
+        <img src="./src/fuzz.png" width=100% />
+      </div>
+    </div>
+  </body>
+</html>
+
