@@ -1,7 +1,7 @@
 FlowFPX
 ===
 
-![FlowFPX: Nimble Tools for Debugging Floating-Point Exceptions](https://github.com/utahplt/flowfpx/blob/master/src/title.png)
+![FlowFPX: Nimble Tools for Debugging Floating-Point Exceptions](https://github.com/utahplt/flowfpx/blob/main/src/title.png)
 
 
 FlowFPX is a toolkit for systematically debugging floating-point exceptions.
