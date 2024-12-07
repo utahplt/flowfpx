@@ -8,8 +8,8 @@ FlowFPX is a toolkit for systematically debugging floating-point exceptions.
 
 **Components:**
 
-* `FloatTracker.jl` for logging and fuzzing exceptional values in Julia code:
-  <https://github.com/utahplt/FloatTracker.jl>
+* `TrackedFloats.jl` for logging and fuzzing exceptional values in Julia code:
+  <https://github.com/utahplt/TrackedFloats.jl>
   - Examples: <https://github.com/utahplt/FloatTrackerExamples>
 * `Coalesced Stack-Trace Graphs` (CSTGs) for summarizing logs:
   <https://github.com/utahplt/CSTG>
